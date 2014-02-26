@@ -87,7 +87,7 @@ var IgeVelocityComponent = IgeClass.extend({
 		var vel = this._velocity;
 
 		if (!relative) {
-			vel.z = y;
+			vel.z = z;
 		} else {
 			vel.z += z;
 		}
