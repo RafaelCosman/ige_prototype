@@ -29,17 +29,15 @@ var IgeVelocityComponent = IgeClass.extend({
 	byAngleAndPower: function (radians, power, relative) {
 		var vel = this._velocity,
 			x = Math.cos(radians) * power,
-			y = Math.sin(radians) * power,
-			z = 0;
+			y = Math.sin(radians) * power;
 
 		if (!relative) {
 			vel.x = x;
 			vel.y = y;
-			vel.z = z;
+			vel.z = 0;
 		} else {
 			vel.x += x;
 			vel.y += y;
-			vel.z += z;
 		}
 
 		return this._entity;
