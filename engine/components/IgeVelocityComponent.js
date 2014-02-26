@@ -22,6 +22,10 @@ var IgeVelocityComponent = IgeClass.extend({
 		this.velocity.tick(ctx);
 	},
 
+	/**
+	 * Set (if relative == false) or change (if relative == true) the velocity by
+	 * a vector with angle (radians) and magnitude (power)
+	 */
 	byAngleAndPower: function (radians, power, relative) {
 		var vel = this._velocity,
 			x = Math.cos(radians) * power,
